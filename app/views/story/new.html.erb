@@ -1,0 +1,9 @@
+<%= form_with model: @story do |s| %>
+  <%= s.label :title, 'タイトル' %>
+  <%= s.text_field :title %>
+  <%= s.label :stage, '進捗' %>
+  <%= s.text_field :stage %>
+  <%= s.label :date, '日付' %>
+  <%= s.text_field :date %>
+  <%= s.submit '登録' %>
+<% end %>
